@@ -10,15 +10,15 @@ int main()
     Notifigator n;
 
     // Create followers
-    Follower *a = new Follower("A");
-    Follower *b = new Follower("B");
-    Follower *c = new Follower("C");
+    Follower a("A");
+    Follower b("B");
+    Follower c("C");
     cout << endl;
 
     // Add followers to the notification list
-    n.add(a);
-    n.add(b);
-    n.add(c);
+    n.add(&a);
+    n.add(&b);
+    n.add(&c);
     cout << endl;
 
     // print all followers
@@ -30,7 +30,7 @@ int main()
     cout << endl;
 
     // Delete b follower on the notification list
-    n._delete(b);
+    n._delete(&b);
 
     n.print();
     cout << endl;

@@ -232,6 +232,7 @@ Makefile: ../notifigator_using_pointer_reference.pro D:/Qt_Creator/6.8.1/mingw_6
 		D:/Qt_Creator/6.8.1/mingw_64/mkspecs/features/qt_config.prf \
 		D:/Qt_Creator/6.8.1/mingw_64/mkspecs/win32-g++/qmake.conf \
 		D:/Qt_Creator/6.8.1/mingw_64/mkspecs/features/spec_post.prf \
+		.qmake.stash \
 		D:/Qt_Creator/6.8.1/mingw_64/mkspecs/features/exclusive_builds.prf \
 		D:/Qt_Creator/6.8.1/mingw_64/mkspecs/features/toolchain.prf \
 		D:/Qt_Creator/6.8.1/mingw_64/mkspecs/features/default_pre.prf \
@@ -250,7 +251,6 @@ Makefile: ../notifigator_using_pointer_reference.pro D:/Qt_Creator/6.8.1/mingw_6
 		D:/Qt_Creator/6.8.1/mingw_64/mkspecs/features/yacc.prf \
 		D:/Qt_Creator/6.8.1/mingw_64/mkspecs/features/lex.prf \
 		../notifigator_using_pointer_reference.pro \
-		.qmake.stash \
 		D:/Qt_Creator/6.8.1/mingw_64/mkspecs/features/build_pass.prf
 	$(QMAKE) -o Makefile ..\notifigator_using_pointer_reference.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug"
 D:/Qt_Creator/6.8.1/mingw_64/mkspecs/features/spec_pre.prf:
@@ -415,6 +415,7 @@ D:/Qt_Creator/6.8.1/mingw_64/mkspecs/features/qt_functions.prf:
 D:/Qt_Creator/6.8.1/mingw_64/mkspecs/features/qt_config.prf:
 D:/Qt_Creator/6.8.1/mingw_64/mkspecs/win32-g++/qmake.conf:
 D:/Qt_Creator/6.8.1/mingw_64/mkspecs/features/spec_post.prf:
+.qmake.stash:
 D:/Qt_Creator/6.8.1/mingw_64/mkspecs/features/exclusive_builds.prf:
 D:/Qt_Creator/6.8.1/mingw_64/mkspecs/features/toolchain.prf:
 D:/Qt_Creator/6.8.1/mingw_64/mkspecs/features/default_pre.prf:
@@ -433,7 +434,6 @@ D:/Qt_Creator/6.8.1/mingw_64/mkspecs/features/exceptions.prf:
 D:/Qt_Creator/6.8.1/mingw_64/mkspecs/features/yacc.prf:
 D:/Qt_Creator/6.8.1/mingw_64/mkspecs/features/lex.prf:
 ../notifigator_using_pointer_reference.pro:
-.qmake.stash:
 D:/Qt_Creator/6.8.1/mingw_64/mkspecs/features/build_pass.prf:
 qmake: FORCE
 	@$(QMAKE) -o Makefile ..\notifigator_using_pointer_reference.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug"
